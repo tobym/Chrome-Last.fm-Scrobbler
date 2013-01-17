@@ -173,9 +173,6 @@ function cleanArtistTrack(artist, track) {
  * Simply request the scrobbler.js to submit song previusly specified by calling updateNowPlaying()
  */ 
 function scrobbleTrack() {
-   // stats
-   chrome.extension.sendRequest({type: 'trackStats', text: 'Google+ YouTube Player song scrobbled'});
-   
    // scrobble
    chrome.extension.sendRequest({type: 'submit'});
 }

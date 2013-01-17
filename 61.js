@@ -97,9 +97,6 @@ function parseDuration(artistTitle){
  * Simply request the scrobbler.js to submit song previusly specified by calling updateNowPlaying()
  */ 
 function scrobbleTrack() {
-   // stats
-   chrome.extension.sendRequest({type: 'trackStats', text: 'The sixtyone song scrobbled'});
-   
    // scrobble
    chrome.extension.sendRequest({type: 'submit'});
 }
